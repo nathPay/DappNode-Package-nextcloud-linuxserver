@@ -1,0 +1,31 @@
+version: '2.1'
+services:
+  db:
+    container_name: nextclouddb
+    image: 'linuxserver/mariadb:version-110.4.15mariabionic'
+    restart: always
+    volumes:
+      - 'db:/config'
+    environment:
+      - MYSQL_ROOT_PASSWORD=rootPassword
+      - TZ=Europe/Paris
+      - MYSQL_DATABASE=nextcloud
+      - MYSQL_USER=nextclouduser
+      - MYSQL_PASSWORD=mysqlPassword
+  app:
+    container_name: nextcloud
+    image: 'linuxserver/nextcloud:version-20.0.1'
+    restart: always
+    ports:
+      - '6080:443'
+    volumes:
+      - 'config:/config'
+      - 'data:/data'
+    environment:
+      - TZ=Europe/Paris
+    depends_on:
+      - db
+volumes:
+  config: {}
+  data: {}
+  db: {}

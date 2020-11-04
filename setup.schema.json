@@ -1,0 +1,31 @@
+{
+    "description": "Nextcloud is a powerfull cloud platform.",
+    "type": "object",
+    "properties": {
+        "MYSQL_ROOT_PASSWORD": {
+            "type": "string",
+            "title": "Database admin password"
+        },
+        "TZ": {
+            "type": "string",
+            "title": "Time Zone"
+        },
+        "MYSQL_DATABASE": {
+            "type": "string",
+            "title": "Database name"
+        },
+        "MYSQL_USER": {
+            "type": "string",
+            "title": "nextcloud database user"
+        },
+        "MYSQL_PASSWORD": {
+            "type": "string",
+            "title": "nextcloud database password"
+        },
+        "nextcloudDataMountPoint": {
+            "type": "string",
+            "title": "Nextcloud data mountpoint",
+            "description": "Use this option if you want to store your nextcloud data in a external drive."
+        }
+    }
+}

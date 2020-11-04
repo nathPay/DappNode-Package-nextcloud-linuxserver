@@ -1,0 +1,19 @@
+{
+  "name": "nextcloud.public.dappnode.eth",
+  "version": "0.2.0",
+  "description": "Run Nextcloud on your DappNode powered by linuxserver docker image",
+  "type": "service",
+  "author": "Nathan Payre",
+  "categories": [
+    "Storage"
+  ],
+  "mainService":"nextcloud",
+  "repository": {
+    "type": "git",
+    "url": "https://https://github.com/nathPay"
+  },
+  "links": {
+    "homepage": "http://nextcloud.public.dappnode.eth"
+  },
+  "license": "GLP-3.0"
+}

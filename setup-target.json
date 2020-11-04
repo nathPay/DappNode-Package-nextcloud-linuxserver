@@ -1,0 +1,25 @@
+{
+    "MYSQL_ROOT_PASSWORD": {
+        "type": "environment",
+        "name": "MYSQL_ROOT_PASSWORD"
+    },
+    "TZ": {
+        "type": "environment",
+        "name": "TZ"
+    },
+    "MYSQL_DATABASE": {
+        "type": "environment",
+        "name": "MYSQL_DATABASE"
+    },
+    "MYSQL_USER": {
+        "type": "environment",
+        "name": "MYSQL_USER"
+    },
+    "MYSQL_PASSWORD": {
+        "type": "environment",
+        "name": "MYSQL_PASSWORD"
+    },
+    "nextcloudDataMountPoint": {
+        "type": "allNamedVolumesMountpoint"
+    }
+}

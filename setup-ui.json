@@ -1,0 +1,9 @@
+{
+    "ui:order": ["MYSQL_DATABASE", "MYSQL_ROOT_PASSWORD", "MYSQL_USER", "MYSQL_PASSWORD", "TZ", "nextcloudDataMountPoint"],
+    "MYSQL_ROOT_PASSWORD": {
+        "ui:widget": "password"
+    },
+    "MYSQL_PASSWORD": {
+        "ui:widget": "password"
+    }
+}
